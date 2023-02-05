@@ -17,23 +17,6 @@
   float: left;
   width: calc((100% - #{$gutter-horizontal}) / 2);
 
-  &-link:link,
-  &-link:visited {
-    text-decoration: none;
-    padding: 10px;
-    color: $dark_green;
-    border-bottom: 1px solid $dark_green;
-    transition: all 0.3s;
-    letter-spacing: 1px;
-    line-height: 1.8;
-  }
-
-  &-link:hover,
-  &-link:active {
-    color: $font-light-grey;
-    background-color: $dark_green;
-  }
-
   &:not(:last-child) {
     margin-right: $gutter-horizontal;
   }

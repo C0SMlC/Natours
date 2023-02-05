@@ -24,6 +24,7 @@
   background-image: linear-gradient(to right, $light_green, $dark_green);
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 700;
   letter-spacing: 0.2rem;
   color: transparent;

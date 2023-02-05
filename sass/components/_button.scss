@@ -1,12 +1,12 @@
 .btn {
+  &,
   &:link,
   &:visited {
+    border: none;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: $lightest_grey;
-    color: $light_black;
-    padding: 2rem 4rem;
+    padding: 1.9rem 3rem;
     border-radius: 10rem;
     display: inline-block;
     position: relative;
@@ -22,7 +22,6 @@
     &::after {
       transform: scale(1.5);
       opacity: 0;
-      /* background-color: aqua; */
     }
   }
 
@@ -34,7 +33,6 @@
   &::after {
     content: "";
     display: inline-block;
-    background-color: $lightest_grey;
     height: 100%;
     width: 100%;
     border-radius: 10rem;
@@ -43,5 +41,42 @@
     left: 0;
     z-index: -1;
     transition: all 0.4s;
+  }
+}
+
+.btn_white {
+  background-color: $lightest_grey;
+  color: $color-black;
+  &::after {
+    background-color: $lightest_grey;
+  }
+}
+
+.btn_green {
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+
+  &::after {
+    background-color: $color-primary;
+  }
+}
+
+.btn-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 10px;
+    color: $dark_green;
+    border-bottom: 1px solid $dark_green;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-size: 1.8rem;
+  }
+
+  &:hover,
+  &:active {
+    color: $font-light-grey;
+    background-color: $dark_green;
   }
 }
